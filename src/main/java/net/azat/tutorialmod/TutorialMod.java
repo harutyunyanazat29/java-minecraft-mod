@@ -1,6 +1,7 @@
 package net.azat.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.azat.tutorialmod.block.ModBlocks;
 import net.azat.tutorialmod.item.ModCreativeModTabs;
 import net.azat.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,7 @@ public class TutorialMod {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

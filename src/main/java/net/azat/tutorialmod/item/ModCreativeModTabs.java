@@ -1,6 +1,7 @@
 package net.azat.tutorialmod.item;
 
 import net.azat.tutorialmod.TutorialMod;
+import net.azat.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -23,6 +24,8 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(Items.DIAMOND);
 
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
                     })
                     .build());
